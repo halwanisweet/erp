@@ -8,7 +8,6 @@
                 <field name="delivery_template_id" attrs="{'invisible': [('picking_type_code', '!=', 'outgoing')]}"/>
             </field>
             <xpath expr="//field[@name='move_ids_without_package']//tree//field[@name='product_id']" position="after">
-                
                 <field name="delivery_template_id"   invisible="1" force_save="1"/>
 
             </xpath>
